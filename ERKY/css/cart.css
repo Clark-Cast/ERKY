@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    user-select: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+}
+
+/* Navbar */
+
+.navbar-section {
+    background-color: #212121;
+}
+
+.navbar_container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 25px;
+}
+
+.navbar_nb {
+    padding: 20px;
+    font-family: Helvetica, sans-serif;
+}
+
+.logo img {
+    width: 50px;
+}
+
+/* End Navbar */
+
+.msg {
+    font-weight: 500;
+    text-align: center;
+    border: 1px solid transparent;
+    padding: 10px 0;
+    transition: opacity 0.6s;
+    animation: hideAnimation 0s ease-in 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hideAnimation {
+    to {
+        visibility: hidden;
+    }
+}
+
+.msg-primary {
+    background-color: #436fd8;
+    color: #fff;
+}
+
+.msg-danger {
+    background-color: rgba(187, 33, 35, 0.8);
+    color: #fff;
+}
+
+.close-btn {
+    float: right;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.go-back {
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.empty-cart {
+    font-size: 3rem;
+    margin: 100px 0;
+    text-align: center;
+}
+
+.empty-cart span {
+    color: #212121;
+}
+
+.empty-cart h5 {
+    font-weight: 700;
+}
+
+.empty-cart a {
+    display: block;
+    width: 35%;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: #436fd8;
+    color: #fff;
+    padding: 10px;
+    margin: 20px auto;
+    text-decoration: none;
+}
+
+.empty-cart a:hover {
+    opacity: .8;
+    color: #fff;
+}
+
+.cart-items {
+    max-width: 1300px;
+    margin: 100px auto;
+    padding: 15px;
+}
+
+.order-details {
+    border: 1px solid transparent;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+        rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.cart-title {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    border-bottom: 1px solid rgba(33, 33, 33, 0.3);
+    padding-bottom: 10px;
+}
+
+.price-details {
+    border: 1px solid transparent;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+        rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+        rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    height: fit-content;
+}
+
+.price-title {
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(33, 33, 33, 0.3);
+    padding-bottom: 10px;
+}
+
+input[type=number] {
+    margin: 5px;
+    font-family: inherit;
+    font-size: 1rem;
+    text-align: center;
+    border: 1px solid rgb(33, 33, 33, 0.5);
+    border-radius: 10px;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    opacity: 1;
+}
